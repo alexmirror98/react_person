@@ -4,8 +4,9 @@ export const Person = ({ person }) => {
   const { name, age, isMarried, sex, partnerName } = person;
 
   const partnerInfo = isMarried
-    ? `${partnerName} is my ${sex === 'm' ? 'wife' : 'husband'}`
-    : 'I am not married';
+  ? `My ${sex === 'm' ? 'wife' : 'husband'} is ${partnerName}`
+  : 'I am not married';
+
 
   return (
     <div className="Person">
